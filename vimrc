@@ -18,12 +18,17 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+
+" Configure Pathogen
+" call pathogen#runtime_append_all_bundles()
+" call pathogen#helptags()
+
 " Configure vim-plug
 call plug#begin('~/.vim/bundle')
-
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+    Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'scrooloose/syntastic'
-    Plug 'tomasr/molokai'
+    "Plug 'tomasr/molokai'
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
     Plug 'editorconfig/editorconfig-vim'
     Plug 'vim-scripts/AutoComplPop'
@@ -31,8 +36,8 @@ call plug#begin('~/.vim/bundle')
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'scrooloose/nerdcommenter'
     Plug 'rking/ag.vim'
-    Plug 'sheerun/vim-polyglot'
-
+    Plug 'sheerun/vim-polyglot'	
+    ":PlugInstall
 call plug#end()
 
 
@@ -113,7 +118,7 @@ let g:syntastic_javascript_checkers = ['standard']
 
 " COLOR SCHEME
 " Load molokai (alternative to Monokai from TextMate) color scheme
-colorscheme molokai
+" colorscheme molokai
 
 " FONT
 set guifont=Monaco\ for\ Powerline:h12
@@ -156,3 +161,7 @@ nnoremap <leader>st :SyntasticToggleMode<cr>
 
 " NERDTree
 nnoremap <leader>ft :NERDTreeToggle<cr>
+
+if has("autocmd")
+	filetype plugin indent on 
+endif
