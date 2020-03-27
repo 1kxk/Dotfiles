@@ -1,0 +1,31 @@
+{
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "terminal.integrated.inheritEnv": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.formatOnSave": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.colorTheme": "Dracula",
+    "cSpell.language": "en",
+    "cSpell.enableFiletypes": [
+        "!php"
+    ],
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "cSpell.userWords": [
+        "whatsapp"
+    ],
+    "git.autofetch": true,
+    "terminal.integrated.shell.osx": "/bin/zsh"
+}
