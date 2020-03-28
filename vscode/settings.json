@@ -1,31 +1,85 @@
 {
+    // Define o tema do VSCode
+    "workbench.colorTheme": "Dracula",
+    // Configura tamanho e família da fonte
+    "editor.fontSize": 14,
+    "editor.lineHeight": 24,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "explorer.compactFolders": false,
+    "editor.codeActionsOnSave": {
+        // For ESLint
+        "source.fixAll.eslint": true,
+        // For TSLint
+        "source.fixAll.tslint": true,
+        // For Stylelint
+        "source.fixAll.stylelint": true
+    },
+    // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.formatOnSave": true,
+    "eslint.packageManager": "yarn",
+    "[javascript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "[javascriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "[typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "[typescriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+        }
+    },
+    "files.associations": {
+        ".sequelizerc": "javascript",
+        ".stylelintrc": "json",
+        ".prettierrc": "json"
+    },
+    // Aplica um sinal visual na esquerda da linha selecionada
+    "editor.renderLineHighlight": "gutter",
+    // Aumenta a fonte do terminal
+    "terminal.integrated.fontSize": 14,
+    // Define o tema dos ícones na sidebar
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.tabSize": 2,
+    "window.zoomLevel": 0,
+    "extensions.ignoreRecommendations": true,
     "emmet.syntaxProfiles": {
-        "javascript": "jsx"
+        "javascript": "jsx",
     },
     "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
+        "javascript": "javascriptreact",
     },
-    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "kite.showWelcomeNotificationOnStartup": false,
-    "terminal.integrated.shell.linux": "/usr/bin/zsh",
-    "terminal.integrated.inheritEnv": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "breadcrumbs.enabled": true,
+    "git.enableSmartCommit": true,
+    "editor.parameterHints.enabled": false,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "terminal.integrated.shell.osx": "/bin/zsh",
     "explorer.confirmDragAndDrop": false,
-    "editor.formatOnSave": true,
+    "liveshare.featureSet": "insiders",
+    "explorer.confirmDelete": false,
+    "typescript.tsserver.log": "verbose",
+    "javascript.suggest.autoImports": false,
+    "typescript.suggest.autoImports": false,
+    "workbench.activityBar.visible": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.jediEnabled": false,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "workbench.colorTheme": "Dracula",
-    "cSpell.language": "en",
-    "cSpell.enableFiletypes": [
-        "!php"
-    ],
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "cSpell.userWords": [
-        "whatsapp"
-    ],
-    "git.autofetch": true,
-    "terminal.integrated.shell.osx": "/bin/zsh"
+    "kite.showWelcomeNotificationOnStartup": false
 }
