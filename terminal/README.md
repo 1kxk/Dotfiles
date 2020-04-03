@@ -1,3 +1,0 @@
-### INSTALLATION
-
-    https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/
