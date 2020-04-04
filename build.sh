@@ -17,6 +17,7 @@ fi
 sudo apt update
 sudo apt install $ESSENTIAL_PACKAGES $CUSTOM_PACKAGES -y
 sudo apt upgrade -y
+      
 
 ## SETUP FONTS
 sudo apt install fonts-firacode -y
