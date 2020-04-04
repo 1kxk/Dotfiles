@@ -12,18 +12,6 @@ export ZSH="/home/kxk/.oh-my-zsh"
 ZSH_THEME="spaceship"
 
 
-# FLASK
-export EMAIL="caiow.wk@gmail.com"
-export PASSWD="vmkgtoodvqdjbdnu"
-export SECRET_KEY='fb0526bbd17deff04647196be4e8ebe7'
-export SQLALCHEMY_DATABASE_URI='sqlite:///blog.db'
-
-# ANDROID STUDIO
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$ANDROID_HOME/tools:$PATH
-export PATH=$ANDROID_HOME/platform-tools:$PATH
-
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
