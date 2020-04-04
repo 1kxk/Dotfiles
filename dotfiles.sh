@@ -4,7 +4,7 @@
 # CONFIG DOT FILES #
 ####################
 
-echo -e "Which Dot file you wish to auto setup:\n(1) - VIM\n(2) - VSCODE\n(3) - ZSH"
+echo -e "Which Dot file you wish to auto setup:\n(1) - VIM\n(2) - VSCODE\n(3) - ZSH\n(4) - EXIT"
 read -p "" CHOICE
 
 while [ 1 ]
@@ -37,7 +37,7 @@ do
       exit
   esac
 
-  echo -e "You want auto setup other DotFile?\n(1) - VIM\n(2) - VSCODE\n(3) - ZSH"
+  echo -e "You want auto setup other DotFile?\n(1) - VIM\n(2) - VSCODE\n(3) - ZSH\n(4) - EXIT"
   read -p "" CHOICE
 
 done
