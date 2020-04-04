@@ -4,7 +4,7 @@
 # CONFIG DOT FILES #
 ####################
 
-echo -e "Which Dot file you wish to auto setup:\n(1) - VIM\n(2) - VSCODE\n(3) - ZSH\n(4) - EXIT"
+echo -e "Which Dot file you wish to auto setup:\n(1) - VIM\n(2) - VSCODE\n(3) - ZSH\n(4) - SUBLIME\n(5) - EXIT"
 read -p "" CHOICE
 
 while [ 1 ]
@@ -28,16 +28,22 @@ do
       ;;
 
     4)
+      cp -r sublime/* ~/.config/sublime-text-3/Packages/User
+      ;;
+
+    5)
       echo "Done!"
       exit 1
       ;;
 
-    5)
+    *)
       echo "Invalid Option..."
       exit
+      ;;
+
   esac
 
-  echo -e "You want auto setup other DotFile?\n(1) - VIM\n(2) - VSCODE\n(3) - ZSH\n(4) - EXIT"
+  echo -e "You want auto setup other DotFile?\n(1) - VIM\n(2) - VSCODE\n(3) - ZSH\n(4) - SUBLIME\n(5) - EXIT"
   read -p "" CHOICE
 
 done
