@@ -1,6 +1,7 @@
 #!/usr/bin/zsh
 
 ## Install Anaconda
+echo -e "DOWNLOADING anaconda....\n"
 wget -P "$HOME/Downloads/" https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh 
 zsh ~/Downloads/Anaconda3-2020.02-Linux-x86_64.sh
 

@@ -4,17 +4,24 @@
 # TERMINAL CONFIG #
 ###################
 
+echo -e "Which is your distro username (type on terminal to show: whoami)"
+read -p "" DISTRO_USER
+
+
 ## SPACESHIP
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+echo -e "INSTALLING SpaceShip....\n"
+git clone https://github.com/denysdovhan/spaceship-prompt.git "/home/$DISTRO_USER/.oh-my-zsh/custom/themes/spaceship-prompt"
+ln -s "/home/$DISTRO_USER/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme" "/home/$DISTRO_USER/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 
 
 ## PLUGINS
 # autocomplete
+echo -e "\n\nENABLING autocomplete on zsh....\n"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 
 
 ## DRACULA THEME
+echo -e "\n\nINSTALLING Dracula theme....\n"
 sudo apt-get install dconf-cli
 git clone https://github.com/dracula/gnome-terminal "$HOME/gnome-terminal"
 bash ~/gnome-terminal/install.sh

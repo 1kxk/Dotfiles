@@ -100,26 +100,6 @@ fi
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 
-xrandr --newmode "1366x768_60.00"  84.72  1366 1424 1568 1776  768 769 772 795  -HSync +Vsync
-xrandr --addmode VGA-1 "1366x768_60.00"
-xrandr --output VGA-1 --mode 1366x768_60.00
-
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/kxk/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/kxk/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/kxk/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/kxk/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
