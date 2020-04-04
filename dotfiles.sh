@@ -23,7 +23,6 @@ do
       ;;
 
     3)
-      cp -r zsh/.oh-my-zsh ~/.oh-my-zsh
       cp -r zsh/.zshrc ~/.zshrc
       ;;
 
