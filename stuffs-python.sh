@@ -6,7 +6,7 @@ wget -P "$HOME/Downloads/" https://repo.anaconda.com/archive/Anaconda3-2020.02-L
 zsh ~/Downloads/Anaconda3-2020.02-Linux-x86_64.sh
 
 ## Config Anaconda
-~/anaconda/bin/conda init zsh
+~/anaconda3/bin/conda init zsh
 conda update -n base -c defaults conda
 conda config --set auto_activate_base false
 zsh
