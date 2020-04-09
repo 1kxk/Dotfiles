@@ -19,7 +19,7 @@ do
       ;;
 
     2)
-      cp vscode/settings.json ~/.config/Code/User/settings.json
+      cp -r vscode/settings.json ~/.config/Code/User/settings.json
       ;;
 
     3)
