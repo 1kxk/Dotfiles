@@ -1,6 +1,7 @@
 ### USAGE
 
     WARN: The Dotfile setup will destroy all your settings
+    All the code was build it using ubuntu, but most of features must work in any other debian distribution
 
     bash build.sh                   (Install packages)
     bash dotfiles.sh                (Configure vim, vscode, sublime and zsh)
