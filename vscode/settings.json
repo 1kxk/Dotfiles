@@ -1,7 +1,4 @@
 {
-    // Define o tema do VSCode
-    "workbench.colorTheme": "Dracula",
-    // Configura tamanho e família da fonte
     "editor.fontSize": 14,
     "editor.lineHeight": 24,
     "editor.fontFamily": "Fira Code",
@@ -21,6 +18,8 @@
         120
     ],
     "editor.formatOnSave": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
     "eslint.packageManager": "yarn",
     "[javascript]": {
         "editor.codeActionsOnSave": {
@@ -51,8 +50,6 @@
     "editor.renderLineHighlight": "gutter",
     // Aumenta a fonte do terminal
     "terminal.integrated.fontSize": 14,
-    // Define o tema dos ícones na sidebar
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
     "editor.tabSize": 2,
     "window.zoomLevel": 0,
@@ -71,7 +68,7 @@
     "git.enableSmartCommit": true,
     "editor.parameterHints.enabled": false,
     "typescript.updateImportsOnFileMove.enabled": "never",
-    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.shell.osx": "/usr/bin/zsh",
     "explorer.confirmDragAndDrop": false,
     "liveshare.featureSet": "insiders",
     "explorer.confirmDelete": false,
@@ -81,5 +78,6 @@
     "workbench.activityBar.visible": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "kite.showWelcomeNotificationOnStartup": false
+    "kite.showWelcomeNotificationOnStartup": false,
+    "workbench.iconTheme": "material-icon-theme"
 }
