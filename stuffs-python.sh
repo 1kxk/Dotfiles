@@ -7,8 +7,8 @@ zsh ~/Downloads/Anaconda3-2020.02-Linux-x86_64.sh
 
 ## Config Anaconda
 ~/anaconda3/bin/conda init zsh
-conda update -n base -c defaults conda
 conda config --set auto_activate_base false
+conda update -n base -c defaults conda
 zsh
 
 #conda create --name web django flask
