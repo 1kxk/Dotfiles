@@ -2,6 +2,7 @@
 
 # THEME
 
+sudo apt install gnome-tweaks
 git clone https://github.com/daniruiz/flat-remix "$HOME/flat-remix"
 git clone https://github.com/daniruiz/flat-remix-gtk "$HOME/flat-remix-gtk"
 mkdir -p ~/.icons && mkdir -p ~/.themes
