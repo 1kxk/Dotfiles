@@ -18,5 +18,3 @@ sudo apt install yarn -y
 #nvm
 echo -e "\n\nINSTALLING nvm....\n"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-echo "export NVM_DIR=~/.nvm" >> ~/.zshrc
-echo "[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"" >> ~/.zshrc
