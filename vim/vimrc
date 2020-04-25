@@ -28,6 +28,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'scrooloose/syntastic'
+    Plug 'arcticicestudio/nord-vim'
     "Plug 'tomasr/molokai'
     Plug 'jeffkreeftmeijer/vim-numbertoggle'
     Plug 'editorconfig/editorconfig-vim'
@@ -119,6 +120,8 @@ let g:syntastic_javascript_checkers = ['standard']
 " COLOR SCHEME
 " Load molokai (alternative to Monokai from TextMate) color scheme
 " colorscheme molokai
+" colorscheme dracula
+" colorscheme nord
 
 " FONT
 set guifont=Monaco\ for\ Powerline:h12
