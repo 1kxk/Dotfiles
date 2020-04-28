@@ -26,18 +26,23 @@ do
       ;;
 
     2)
+        curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        git clone https://github.com/ChristianChiarulli/nvim.git ~/.config/nvim 
+
+
+    3)
       cp -r vscode/settings.json ~/.config/Code/User/settings.json
       ;;
 
-    3)
+    4)
       cp -r zsh/.zshrc ~/.zshrc
       ;;
 
-    4)
+    5)
       cp -r sublime/* ~/.config/sublime-text-3/Packages/User
       ;;
 
-    5)
+    6)
       echo "Done!"
       exit 1
       ;;
