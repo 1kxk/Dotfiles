@@ -14,8 +14,15 @@ do
       rm -rf ~/.vim
       mkdir ~/.vim
       cp -r vim/* ~/.vim
-      cp vim/vimrc ~/.vimrc
-      cp vim/gvimrc ~/.gvimrc
+      read -p "(1) Deschamps / (2) FisaDev " CHOICE
+      if [ $CHOICE -eq 1 ]
+      then
+          cp vim/vimrc_deschamps ~/.vimrc
+          cp vim/gvimrc_deschamps ~/.gvimrc
+      else
+          cp vim/vimrc_fisadev ~/.vimrc
+          cp vim/gvimrc_fisadev ~/.gvimrc
+      fi
       ;;
 
     2)
