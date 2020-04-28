@@ -1,7 +1,7 @@
 #!/usr/bin/zsh
 
 ## Install Anaconda
-sudo pip3 install pep8 flake8 pyflakes isort yapf
+sudo pip3 install pep8 pynvim flake8 pyflakes isort yapf
 echo -e "DOWNLOADING anaconda....\n"
 wget -P "$HOME/Downloads/" https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh 
 zsh ~/Downloads/Anaconda3-2020.02-Linux-x86_64.sh
