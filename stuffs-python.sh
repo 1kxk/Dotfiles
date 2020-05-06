@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/zsh
 
 ## Install Anaconda
 sudo pip3 install pep8 pynvim flake8 pyflakes isort yapf
