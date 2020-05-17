@@ -162,7 +162,7 @@ endif
 
 " Tell vim-plug we finished declaring plugins, so it can load them
 
-":PlugInstall
+:PlugInstall
 call plug#end()
 
 " ============================================================================
