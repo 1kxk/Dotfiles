@@ -31,11 +31,13 @@ do
 	;;
 
     3)
+      mkdir -p ~/.config/Code/User/
+      touch ~/.config/Code/User/settings.json
       cp -r vscode/settings.json ~/.config/Code/User/settings.json
       ;;
 
     4)
-      cp -r zsh/.zshrc ~/.zshrc
+      cat zsh/.zshrc >> ~/.zshrc
       ;;
 
     5)
