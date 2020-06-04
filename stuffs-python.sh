@@ -1,14 +1,13 @@
-#!/bin/zsh
+#!/bin/bash
 
 ## Install Anaconda
 sudo pip3 install pep8 pynvim flake8 pyflakes isort yapf
 echo -e "DOWNLOADING anaconda....\n"
 wget -P "$HOME/Downloads/" https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh 
-zsh ~/Downloads/Anaconda3-2020.02-Linux-x86_64.sh
+bash ~/Downloads/Anaconda3-2020.02-Linux-x86_64.sh
 
-## Config Anaconda
-read -p "Which is the name of your distro (type whoami to see it): " USER_SYSTEM
-/home/$USER_SYSTEM/anaconda3/bin/conda init zsh
+# Config Anaconda
+$HOME/anaconda3/bin/conda init zsh
 conda config --set auto_activate_base false
 conda update -n base -c defaults conda
 zsh

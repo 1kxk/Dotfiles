@@ -20,5 +20,5 @@ echo -e "\n\nINSTALLING nvm....\n"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 # Install neovim support for Node
-npm i -g neovim
+sudo npm i -g neovim
 
