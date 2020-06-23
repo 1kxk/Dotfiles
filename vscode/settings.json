@@ -1,83 +1,98 @@
 {
-    "editor.fontSize": 14,
-    "editor.lineHeight": 24,
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "explorer.compactFolders": false,
+  // Base settings
+  "editor.fontSize": 14,
+  "editor.lineHeight": 24,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "explorer.compactFolders": false,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.shell.osx": "/usr/bin/zsh",
+  "editor.tabSize": 2,
+  
+  // Apply vertical lines
+  "editor.rulers": [80, 120],
+  
+  // Styling
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.disableLanguages": ["html", "css", "scss"],
+  "eslint.packageManager": "yarn",
+  
+  // Actions On Save
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.fixAll.stylelint": true
+  },
+  
+  // Actions On Save
+  "[javascript]": {
     "editor.codeActionsOnSave": {
-        // For ESLint
-        "source.fixAll.eslint": true,
-        // For TSLint
-        "source.fixAll.tslint": true,
-        // For Stylelint
-        "source.fixAll.stylelint": true
-    },
-    // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
-    "editor.rulers": [
-        80,
-        120
-    ],
-    "editor.formatOnSave": true,
-    "prettier.jsxSingleQuote": true,
-    "prettier.singleQuote": true,
-    "eslint.packageManager": "yarn",
-    "[javascript]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true,
-        }
-    },
-    "[javascriptreact]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true,
-        }
-    },
-    "[typescript]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true,
-        }
-    },
-    "[typescriptreact]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true,
-        }
-    },
-    "files.associations": {
-        ".sequelizerc": "javascript",
-        ".stylelintrc": "json",
-        ".prettierrc": "json"
-    },
-    // Aplica um sinal visual na esquerda da linha selecionada
-    "editor.renderLineHighlight": "gutter",
-    // Aumenta a fonte do terminal
-    "terminal.integrated.fontSize": 14,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.tabSize": 2,
-    "window.zoomLevel": 0,
-    "extensions.ignoreRecommendations": true,
-    "emmet.syntaxProfiles": {
-        "javascript": "jsx",
-    },
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-    },
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.enabled": false,
-    "breadcrumbs.enabled": true,
-    "git.enableSmartCommit": true,
-    "editor.parameterHints.enabled": false,
-    "typescript.updateImportsOnFileMove.enabled": "never",
-    "terminal.integrated.shell.osx": "/usr/bin/zsh",
-    "explorer.confirmDragAndDrop": false,
-    "liveshare.featureSet": "insiders",
-    "explorer.confirmDelete": false,
-    "typescript.tsserver.log": "verbose",
-    "javascript.suggest.autoImports": false,
-    "typescript.suggest.autoImports": false,
-    "workbench.activityBar.visible": true,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "kite.showWelcomeNotificationOnStartup": false,
-    "workbench.iconTheme": "material-icon-theme"
+      "source.fixAll.eslint": true
+    }
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json"
+  },
+  
+  // Emmets
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  
+  // Apply a visual sign on the left of the selected line
+  "editor.renderLineHighlight": "gutter",
+  
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 0,
+  "extensions.ignoreRecommendations": true,
+  
+  // Git
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "git.enableSmartCommit": true,
+  
+  // Suggestions
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "tabnine.experimentalAutoImports": true,
+  
+  // Misc
+  "breadcrumbs.enabled": true,
+  "editor.parameterHints.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "explorer.confirmDragAndDrop": false,
+  "liveshare.featureSet": "insiders",
+  "explorer.confirmDelete": false,
+  "typescript.tsserver.log": "verbose",
+  "javascript.suggest.autoImports": false,
+  "typescript.suggest.autoImports": false,
+  "workbench.activityBar.visible": true,
+  "kite.showWelcomeNotificationOnStartup": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  
 }

@@ -4,15 +4,7 @@
 
 ## SETUP MAIN PACKAGES
 ESSENTIAL_PACKAGES="git vim wget curl build-essential"
-
-echo -e "Do you want install your own packages or leave the default settings?\n(1) - Default\n(2) - My Packages"
-read -p "--> " CHOICE
-
-if [ "$CHOICE" -eq 1 -o -z "$CHOICE" ]; then
-  CUSTOM_PACKAGES="$(cat .default-packages)"
-else
-  CUSTOM_PACKAGES="$(cat .custom-packages)"
-fi
+USTOM_PACKAGES="$(cat .custom-packages)"
 
 
 
