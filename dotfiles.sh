@@ -14,14 +14,17 @@ do
       rm -rf ~/.vim
       mkdir ~/.vim
       cp -r vim/* ~/.vim
-      read -p "(1) Deschamps / (2) FisaDev " OCHOICE
+      read -p "(1) Deschamps / (2) FisaDev (python-dev) / (3) Benawad (web-dev)" OCHOICE
       if [ $OCHOICE -eq 1 ]
       then
-          cp vim/vimrc_deschamps ~/.vimrc
-          cp vim/gvimrc_deschamps ~/.gvimrc
+        cp vim/vimrc_deschamps ~/.vimrc
+        cp vim/gvimrc_deschamps ~/.gvimrc
+      elif [ $OCHOICE -eq 2  ]
+      then
+        cp vim/vimrc_fisadev ~/.vimrc
+        cp vim/gvimrc_fisadev ~/.gvimrc
       else
-          cp vim/vimrc_fisadev ~/.vimrc
-          cp vim/gvimrc_fisadev ~/.gvimrc
+        cp vim/vimrc_benawad ~/.vimrc
       fi
       ;;
 
