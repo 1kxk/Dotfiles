@@ -4,7 +4,7 @@
 
 ## SETUP MAIN PACKAGES
 ESSENTIAL_PACKAGES="git vim wget curl build-essential"
-USTOM_PACKAGES="$(cat .custom-packages)"
+CUSTOM_PACKAGES="$(cat .custom-packages)"
 
 
 
