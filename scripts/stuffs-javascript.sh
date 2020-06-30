@@ -7,7 +7,7 @@
 ## STUFFS FOR WEBDEV
 # nodejs
 echo -e "\n\nADDING nodejs repo....\n"
-curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 echo -e "\n\nINSTALLING nodejs\n"
 sudo apt-get install -y nodejs
 
