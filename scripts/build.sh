@@ -24,6 +24,13 @@ sudo apt autoremove -y
 echo -e "\n\nINSTALLING fonts....\n"
 sudo apt install fonts-firacode -y
 
+## SETUP DOTFILES
+echo -e "\n\nINSTALLING VIM & NVIM PLUGS"
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sh -c curl -fLo "'${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim''"}'"
+
 
 ## SETUP TERMINAL
 echo -e "\n\nINSTALLING zsh....\n"
