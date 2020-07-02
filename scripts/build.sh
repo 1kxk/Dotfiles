@@ -3,7 +3,7 @@
 ####################
 
 ## SETUP MAIN PACKAGES
-ESSENTIAL_PACKAGES="git vim wget curl build-essential"
+ESSENTIAL_PACKAGES="git vim neovim wget curl build-essential"
 CUSTOM_PACKAGES="$(cat .custom-packages)"
 
 
