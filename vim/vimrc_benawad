@@ -19,7 +19,6 @@ Plug 'morhetz/gruvbox'
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
 " Initialize plugin system
-:PlugInstall
 call plug#end()
 
 inoremap jk <ESC>

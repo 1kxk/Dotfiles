@@ -3,8 +3,8 @@
 ####################
 
 ## SETUP MAIN PACKAGES
-ESSENTIAL_PACKAGES="git vim wget curl build-essential"
-USTOM_PACKAGES="$(cat .custom-packages)"
+ESSENTIAL_PACKAGES="git vim neovim wget curl build-essential"
+CUSTOM_PACKAGES="$(cat .custom-packages)"
 
 
 
@@ -23,6 +23,13 @@ sudo apt autoremove -y
 ## SETUP FONTS
 echo -e "\n\nINSTALLING fonts....\n"
 sudo apt install fonts-firacode -y
+
+## SETUP DOTFILES
+echo -e "\n\nINSTALLING VIM & NVIM PLUGS"
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sh -c curl -fLo "'${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim''"}'"
 
 
 ## SETUP TERMINAL
