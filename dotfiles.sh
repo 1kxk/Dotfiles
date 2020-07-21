@@ -4,7 +4,7 @@
 # CONFIG DOT FILES #
 ####################
 
-echo -e "Which DotFile?\n(1) - VIM\n(2) - NVIM\n(3) - VSCODE\n(4) - ZSH\n(5) - SUBLIME\n(6) - EXIT"
+echo -e "Which DotFile?\n(1) - VIM\n(2) - NVIM\n(3) - VSCODE\n(4) - ZSH\n(5) - SUBLIME\n(6) - GIT\n(7) - EXIT"
 read -p "" CHOICE
 
 while [ 1 ]
@@ -48,6 +48,10 @@ do
       ;;
 
     6)
+      cp ./git/.gitconfig ~/.gitconfig
+      ;;
+
+    7)
       echo "Done!"
       exit 1
       ;;
@@ -59,7 +63,7 @@ do
 
   esac
 
-  echo -e "You want auto setup other DotFile?\n(1) - VIM\n(2) - NVIM\n(3) - VSCODE\n(4) - ZSH\n(5) - SUBLIME\n(6) - EXIT"
+  echo -e "You want auto setup other DotFile?\n(1) - VIM\n(2) - NVIM\n(3) - VSCODE\n(4) - ZSH\n(5) - SUBLIME\n(6) - GIT\n(7) - EXIT"
   read -p "" CHOICE
 
 done
