@@ -6,7 +6,7 @@
   "editor.fontLigatures": true,
   "explorer.compactFolders": false,
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.shell.osx": "/usr/bin/zsh",
+  "terminal.integrated.shell.linux": "/usr/bin/zsh",
   "editor.tabSize": 2,
 
   // Apply vertical lines
