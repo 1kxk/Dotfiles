@@ -13,7 +13,7 @@ do
     1)
       rm -rf ~/.vim
       mkdir ~/.vim
-      cp -r vim/* ~/.vim
+      cp -r vim/.vim ~/.vim
       read -p "(1) Deschamps / (2) FisaDev (python-dev) / (3) Benawad (web-dev)" OCHOICE
       if [ $OCHOICE -eq 1 ]
       then
