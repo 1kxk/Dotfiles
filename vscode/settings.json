@@ -12,11 +12,37 @@
   // Apply vertical lines
   "editor.rulers": [80, 120],
 
-  // Styling
+  // Code Styling
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
   "prettier.disableLanguages": ["css", "scss"],
   "eslint.packageManager": "yarn",
+
+  // Styling Folders
+  "material-icon-theme.folders.associations": {
+    "infra": "app",
+    "entities": "class",
+    "domain": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock",
+    "websockets": "pipe",
+    "protos": "pipe",
+    "grpc": "pipe",
+    "providers": "include",
+    "subscribers": "messages",
+    "useCases": "controller",
+    "kafka": "scripts",
+    "mappers": "meta",
+    "_shared": "shared",
+    "eslint-config": "tools"
+  },
 
   // Actions On Save
   "editor.formatOnSave": true,
@@ -87,8 +113,8 @@
   "liveshare.featureSet": "insiders",
   "explorer.confirmDelete": false,
   "typescript.tsserver.log": "verbose",
-  "javascript.suggest.autoImports": false,
-  "typescript.suggest.autoImports": false,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
   "workbench.activityBar.visible": true,
   "kite.showWelcomeNotificationOnStartup": false,
   "workbench.iconTheme": "material-icon-theme",
@@ -96,12 +122,25 @@
   "sync.autoDownload": true,
   "sync.autoUpload": true,
   "sync.gist": "41ca8040fa7ce0cf1583e117243a833a",
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Omni",
   "cSpell.userWords": [
+    "archivo",
+    "bootcamps",
     "component",
     "firestore",
+    "mail",
+    "middlewares",
+    "minmax",
     "mixins",
+    "postgres",
+    "rocketseat",
+    "sendgrid",
+    "sendgrid mail",
+    "signin",
     "unmount",
     "will"
-  ]
+  ],
+  "workbench.colorCustomizations": {},
+  "cSpell.ignoreWords": ["bson", "bson type", "type"]
 }
+
