@@ -22,5 +22,5 @@ echo -e "\n\nINSTALLING nvm....\n"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 # Install neovim support for Node
-sudo npm install neovim nodemon live-server create-react-app -g
+sudo npm install neovim nodemon live-server firebase-tools create-react-app -g
 
