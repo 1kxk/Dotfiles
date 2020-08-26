@@ -1,9 +1,10 @@
 [user]
-	email = caiow.wk@gmail.com
-	name = 1kxk
+  email = caiow.wk@gmail.com
+  name = 1kxk
 
 [core]
-	autocrlf = input
+  autocrlf = input
+  editor = code --wait
 
 [push]
   default = current
