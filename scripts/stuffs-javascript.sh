@@ -5,6 +5,11 @@
 ####################
 
 ## STUFFS FOR WEBDEV
+
+#nvm
+echo -e "\n\nINSTALLING nvm....\n"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
 # nodejs
 echo -e "\n\nADDING nodejs repo....\n"
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
@@ -18,10 +23,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt update
 sudo apt install yarn -y
 
-#nvm
-echo -e "\n\nINSTALLING nvm....\n"
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 # Install neovim support for Node
-sudo npm install neovim nodemon live-server firebase-tools create-react-app -g
+sudo npm install neovim nodemon live-server firebase-tools -g
 

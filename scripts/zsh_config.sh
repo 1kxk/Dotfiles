@@ -19,4 +19,9 @@ ln -s "/home/$DISTRO_USER/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zs
 echo -e "\n\nENABLING autocomplete on zsh....\n"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 
+## HIGHLIGHT
+echo -e "INSTALLING Highlighting zsh...\n"
+cd
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
