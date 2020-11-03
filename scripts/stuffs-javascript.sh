@@ -25,5 +25,5 @@ sudo apt install yarn -y
 
 
 # Install neovim support for Node
-sudo npm install neovim nodemon live-server firebase-tools -g
+sudo npm install neovim -g
 
