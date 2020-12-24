@@ -66,4 +66,4 @@ do
   echo -e "You want auto setup other DotFile?\n(1) - VIM\n(2) - NVIM\n(3) - VSCODE\n(4) - ZSH\n(5) - SUBLIME\n(6) - GIT\n(7) - EXIT"
   read -p "" CHOICE
 
-done
+done 
